@@ -146,7 +146,10 @@ def decision_tree_classification():
 
     predict_var = dtc.predict([variable])
     st.sidebar.write("Prediction Value :",predict_var[0])
-    
+
+st.sidebar.link_button("Link to Multi Apps & Tools", "https://multiappsandtools.web.app/")
+st.sidebar.markdown("---")
+
 st.sidebar.write("_**Input Machine Learning Parameter**_")
 test = st.sidebar.slider("Input test size",min_value=0.1, max_value=0.4, value=0.2)
 st.sidebar.caption("define test size from the dataset. 0.2 mean 20% from total dataset")
